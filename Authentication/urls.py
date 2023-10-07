@@ -19,10 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('kenny/', include('kenny.urls'), name="kenny")
-from django.urls import path, include
-]
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path("adrian/",include("adrian.urls"), name="adrian")
+    path('kenny/', include('kenny.urls'), name="kenny"),
+    path("adrian/",include("adrian.urls"), name="adrian"),
 ]
